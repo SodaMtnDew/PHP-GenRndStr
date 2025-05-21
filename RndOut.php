@@ -43,5 +43,14 @@ if(isset($_POST['txtLength']))
 		$rndStr = $rndStr . $str2Append;
 	}
 }
-echo '<center><h3>Output Random String:</h3><input type=text size=60 readonly value=\'' . htmlspecialchars($rndStr) . '\'></center>';
 ?>
+<html>
+<head>
+</head>
+<body>
+	<center>
+		<h3>Output Random String:</h3>
+		<input type=text size=60 readonly value='<?php echo htmlspecialchars($rndStr)?>'>
+	</center>
+</body>
+</html>
